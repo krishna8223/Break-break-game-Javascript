@@ -1,0 +1,73 @@
+body{
+    background-color: #e3f2ff;
+}
+.score{
+    border-bottom: 6px solid black;
+}
+.boxes{
+    height: 30px;
+    width: 6%;
+    /* background-color: red; */
+    margin: 20px;
+    /* background-image: linear-gradient(to left, #648ecd, #00b0ea, #00ced3, #00e38a, #a8eb12);*/
+    /* background-image: linear-gradient(to left, #648ecd, #00b0ea, #00ced3, #00e38a, #a8eb12); */
+}
+.game{
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.plate{
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    height: 10px;
+    width: 10%;
+    background-color: black;
+
+}
+.ball{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(240, 174, 99);
+    position: fixed;bottom: 20%;
+    left: 50%;
+
+}
+.gameOver{
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(2, 2, 2, 0.877);
+
+}
+.gameOver button{
+    bottom: 10%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    width: 10%;
+    color: rgb(255, 255, 255);
+    background-color: #145DA0;
+    left: 50%;
+}
+.gameOver h1{
+    left: 50%;
+    position: fixed;
+    top: 41%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    color: white;
+
+}
