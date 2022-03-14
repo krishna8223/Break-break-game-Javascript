@@ -71,9 +71,16 @@ function checkCollision() {
       ballDetail.left < box.right &&
       !element.classList.contains("colide")
     ) {
+      if(
+        ballDetail.top < box.bottom 
+        // ballDetail.bottom > box.top 
+      ){
+        toTop = -toTop;
+      }
 
       element.style.visibility = "hidden";
-      left = -left;
+      left = -left;   
+      // 258097
       element.style.visibility = "hidden";
       element.classList.add("colide");
       Colides++;
